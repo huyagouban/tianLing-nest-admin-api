@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/Vue-v3.x-green">
   </a>
 	<a href="https://github.com/huyagouban/tianLing-nest-admin-api/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/huyagouban/tianLing-nest-admin-api">
+    <img src="https://img.shields.io/github//license/huyagouban/tianLing-nest-admin-api">
   </a>
 </p>
 
