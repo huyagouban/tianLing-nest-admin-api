@@ -1,20 +1,20 @@
 <p align="center">
-  <img width="100px" src="./docs/public/logo.png">
+  <img width="100px" src="./public/logo.png">
 </p>
 <h1 align="center">tianLing-nest-admin</h1>
 <h4 align="center">基于 Nest.js & Vue.js 的后台权限管理系统</h4>
 <p align="center">
-	<a href="https://github.com/haiweilian/vivy-nest-admin">
-    <img src="https://img.shields.io/badge/Vivy-v0.0.1-green">
+	<a href="https://github.com/huyagouban/tianLing-nest-admin-api">
+    <img src="https://img.shields.io/badge/tianLing-v0.0.1-green">
   </a>
   <a href="https://github.com/nestjs/nest">
     <img src="https://img.shields.io/badge/Nest-v10.x-green">
   </a>
-  <a href="https://github.com/facebook/react">
-    <img src="https://img.shields.io/badge/React-v18.x-green">
+  <a href="https://github.com/vuejs/vue">
+    <img src="https://img.shields.io/badge/Vue-v3.x-green">
   </a>
-	<a href="https://github.com/haiweilian/vivy-nest-admin/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/haiweilian/vivy-nest-admin">
+	<a href="https://github.com/huyagouban/tianLing-nest-admin-api/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/huyagouban/tianLing-nest-admin-api">
   </a>
 </p>
 
