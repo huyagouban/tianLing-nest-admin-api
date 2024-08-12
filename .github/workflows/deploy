@@ -1,35 +1,26 @@
-name: cli
-
+name: Deploy Nest.js to GitHub Pages
+ 
 on:
   push:
     branches:
-      - main
-
+      - main  # Replace with your default branch name
+ 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
+ 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Copy files to server
-        uses: appleboy/scp-action@master
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+ 
+      - name: Install Dependencies 🔧
+        run: npm install
+ 
+      - name: Build 🏗️
+        run: npm run build
+ 
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          source: './'
-          target: /home/apps-server/realworld-server/
-
-      - name: SSH to server and restart application
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          script: |
-            cd /home/apps-server/realworld-server
-            npm install
-            npm run build
-            pm2 restart ./dist/src/main.js --name realworld-server
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist/  # Replace with the directory where your build files are located
