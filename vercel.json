@@ -2,8 +2,12 @@
     "version": 2,
     "builds": [
         {
-            "src": "dist/main.js",
-            "use": "@vercel/node"
+            "src": "src/**/*.ts",
+            "use": "@vercel/node",
+            "config": {
+                "command": "nest build",
+                "output": "dist"
+            }
         }
     ],
     "routes": [
