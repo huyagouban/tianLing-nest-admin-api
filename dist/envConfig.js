@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("node:fs");
 const path = require("node:path");
 const isProd = process.env.NODE_ENV === 'production';
+console.log("env:====", process.env);
 function parseEnv() {
     const localEnv = path.resolve('.env.local');
     const prodEnv = path.resolve('.env.prod');

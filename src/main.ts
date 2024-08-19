@@ -4,6 +4,7 @@ import { Response } from "./common/response";
 import { NestExpressApplication } from '@nestjs/platform-express';
 import * as session from "express-session"
 import { join } from 'path';
+
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   // 允许跨域
