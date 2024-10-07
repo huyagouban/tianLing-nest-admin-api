@@ -21,10 +21,15 @@ jobs:
 
       - run: npm install
       - run: ls      
-      - run: cd ./ ./ && nest build
+      # - run: cd ./ ./ && nest build
+        # 直接在根目录下执行构建命令
+      - run: npm run build
 
+      
       - name: Deploy to Vercel
         uses: vercel/vercel-action@v0
         with:
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+
+        
