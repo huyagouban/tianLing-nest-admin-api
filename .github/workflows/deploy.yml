@@ -21,7 +21,7 @@ jobs:
 
       - run: npm install
       - run: ls      
-      - run: nest build
+      - run: cd ./ ./ && nest build
 
       - name: Deploy to Vercel
         uses: vercel/vercel-action@v0
