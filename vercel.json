@@ -5,7 +5,7 @@
             "src": "src/**/*.ts",
             "use": "@vercel/node",
             "config": {
-                "command": "nest build",
+                "command": "npm run build",
                 "output": "dist"
             }
         }
